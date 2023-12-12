@@ -1,11 +1,11 @@
 
 import { configureStore } from "@reduxjs/toolkit"
-import noteReducer from "./slice/taskSlice"
+import taskReducer from "./slice/taskSlice"
 
 export const store = configureStore({
-  reducer: {
-    notes: noteReducer
-  }
+    reducer: {
+        task: taskReducer
+    }
 })
 
 export type RootState = ReturnType<typeof store.getState>
