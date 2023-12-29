@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/json-server.js": {
-      "runtime": "nodejs14.x"
+      "runtime": "now-php@1.0.0"
     }
   }
 }
