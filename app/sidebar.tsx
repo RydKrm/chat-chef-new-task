@@ -16,7 +16,7 @@ const categories: { _id: number, category: string }[] = [
     { _id: 4, category: 'Personal Task' },
 ]
 
-const SideBar: React.FC<SideBarProps> = ({ handleOpen }) => {
+const SideBar = ({ handleOpen }: SideBarProps) => {
     const dispatch = useAppDispatch();
 
     const handleStatus = (status: boolean) => {
@@ -42,8 +42,6 @@ const SideBar: React.FC<SideBarProps> = ({ handleOpen }) => {
                 </div>
             </div>
         </>
-
-
     )
 }
 

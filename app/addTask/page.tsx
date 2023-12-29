@@ -3,6 +3,7 @@ import { categoryData } from "@/public/data/categoryData"
 import { useAppDispatch, useAppSelector } from "@/redux/hook"
 import { addNote, selectTask } from "@/redux/slice/taskSlice"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import React from "react"
 import { useForm, SubmitHandler } from "react-hook-form";
 
@@ -15,16 +16,19 @@ interface FormData {
 const AddTask: React.FC = () => {
     const dispatch = useAppDispatch();
     const task = useAppSelector(selectTask).task;
+    const router = useRouter();
 
     const { register, handleSubmit, reset } = useForm<FormData>()
     const onSubmit: SubmitHandler<FormData> = (data) => {
         const newData = {
             ...data,
             complete: false,
-            _id: task.length + 1
+            id: task.length + 1
         }
         dispatch(addNote(newData));
         reset();
+        router.push('/');
+
     }
     return (
         <div className='w-full lg:max-w-5xl justify-center mx-auto mt-3 lg:mt-10 shadow-md  bg-gray-100 mb-20'>

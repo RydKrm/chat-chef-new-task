@@ -8,15 +8,18 @@ import React from 'react'
 
 
 const Singletask = (project: taskInterFace) => {
-
-    const dispatch = useAppDispatch()
-
+    const dispatch = useAppDispatch();
+    
     const handleDelete: emptyFunction = () => {
-        dispatch(removeNote(project._id))
+        dispatch(removeNote(project.id))
     }
 
     const handleComplete: emptyFunction = () => {
-        dispatch(updateComplete(project._id))
+        const data = {
+            id:project.id,
+            complete:project.complete
+        }
+        dispatch(updateComplete(data))
     }
 
     return (
@@ -26,7 +29,7 @@ const Singletask = (project: taskInterFace) => {
             <p className='text-sm font-normal text-justify' >{project.description.slice(0, 200)}</p>
             <div className="flex flex-row mb-5 mt-2 ">
                 <button onClick={handleComplete} className={`border w-24 text-sm rounded-md ${project.complete ? 'bg-green-400' : 'bg-red-400'} text-white me-2 `}>{project.complete ? 'Completed' : 'Pending'}</button>
-                <Link href={`/editTask/${project._id}`} className={`border w-20 text-sm rounded-md bg-blue-500 text-white ps-5 me-1`} >
+                <Link href={`/editTask/${project.id}`} className={`border w-20 text-sm rounded-md bg-blue-500 text-white ps-5 me-1`} >
                     Edit</Link>
                 <button className={`border w-20 text-sm rounded-md bg-red-500 text-white`} onClick={handleDelete} >
                     delete</button>

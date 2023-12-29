@@ -1,15 +1,5 @@
-
-
-// export interface taskInterFace {
-//     _id: number; 
-//     name:string,
-//     complete:boolean,
-//     category:string,
-//     description:string
-// }[];
-
 export interface taskSingleInterFace {
-    _id: number;
+    id: number;
     name: string,
     complete: boolean,
     category: string,

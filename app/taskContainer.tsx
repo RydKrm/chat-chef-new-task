@@ -27,7 +27,7 @@ const TaskContenter: React.FC<ProjectContentProps> = ({ handleOpen }) => {
                     <div className='max-w-screen-lg mx-auto divide-y mt-8'>
                         <div className="mt-7 pt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center">
                             {
-                                taskData.map((project: taskInterFace) => (<Singletask key={project._id} {...project}
+                                taskData.map((project: taskInterFace) => (<Singletask key={project.id} {...project}
                                 />))
                             }
                         </div>
