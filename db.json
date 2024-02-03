@@ -1,30 +1,16 @@
 {
   "task": [
     {
-      "name": "Install Tailwind CSS with Chadcn UI",
-      "category": "Front-end",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atq",
-      "complete": false,
-      "id": 1
-    },
-    {
-      "name": "Install Redux",
-      "category": "Team Task",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus.",
-      "complete": false,
-      "id": 2
-    },
-    {
       "name": "Submit Daily Task",
       "category": "Personal Task",
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atq",
-      "complete": false,
+      "complete": true,
       "id": 3
     },
     {
       "id": 4,
       "name": "Attend Meeting",
-      "complete": false,
+      "complete": true,
       "category": "Team Task",
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus."
     },
@@ -43,25 +29,11 @@
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus."
     },
     {
-      "id": 7,
-      "name": "Use React Hook Form",
-      "complete": false,
-      "category": "Front-end",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus."
-    },
-    {
-      "id": 8,
       "name": "Install MongoDB",
-      "complete": true,
-      "category": "Back-end",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus."
-    },
-    {
-      "id": 10,
-      "name": "Complete API Making",
+      "category": "Select Category",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus.",
       "complete": false,
-      "category": "Team Task",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam reprehenderit explicabo iure laboriosam, soluta debitis rerum architecto assumenda corporis, unde vel voluptate tempore aliquam atque accusantium, exercitationem ea accusamus."
+      "id": 8
     }
   ]
 }
